@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanskaram University Interdisciplinary Conference 2026 - Bridging Disciplines, Shaping Tomorrow. Join us April 15-17, 2026 for groundbreaking research and networking.">
+    <meta name="keywords" content="Sanskaram University, Conference 2026, Interdisciplinary Conference, Academic Conference, Research Conference">
+    <meta name="author" content="Sanskaram University">
+    <meta property="og:title" content="SUIC 2026 | Sanskaram University">
+    <meta property="og:description" content="Join the premier interdisciplinary conference at Sanskaram University">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://conference.sanskaram.edu.in">
+    <title>SUIC 2026 | Sanskaram University Inter-disciplinary Conference</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    
+    <!-- Layouts -->
+    <link rel="stylesheet" href="css/layouts/container.css">
+    <link rel="stylesheet" href="css/layouts/grid.css">
+    <link rel="stylesheet" href="css/layouts/header.css">
+    <link rel="stylesheet" href="css/layouts/footer.css">
+    
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/timeline.css">
+    
+    <!-- Page Specific -->
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/pages/speakers.css">
+    
+    <!-- Utilities -->
+    <link rel="stylesheet" href="css/utilities/animations.css">
+    <link rel="stylesheet" href="css/utilities/responsive.css">
+    <link rel="stylesheet" href="css/utilities/helpers.css">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/" class="logo">
+                        <img src="images/logo3.png" alt="Sanskaram University" class="logo-img">
+                        <span class="logo-text">SUIC <span class="logo-year">2026</span></span>
+                    </a>
+                    
+                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="call-for-papers.html">Call for Papers</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="committees.html">Committees</a></li>
+                        <li><a href="venue-travel.html">Venue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="registration.html" class="btn-register-nav">Register <i class="fas fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section with Parallax -->
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-bg-parallax"></div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>April 15-17, 2026</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-subtitle">Sanskaram University</span>
+                        Inter-disciplinary Conference 2026
+                    </h1>
+                    <p class="hero-tagline">"Bridging Disciplines, Shaping Tomorrow"</p>
+                    
+                    <div class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Main Campus, Sanskaram University, India</span>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="call-for-papers.html" class="btn btn-primary">
+                            Submit Abstract <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="registration.html" class="btn btn-secondary">
+                            Register Now <i class="fas fa-ticket-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Animated Countdown Timer -->
+                    <div class="countdown-wrapper">
+                        <h3>Conference Starts In</h3>
+                        <div class="countdown-timer" id="countdown">
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="days">00</div>
+                                <div class="countdown-label">Days</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="hours">00</div>
+                                <div class="countdown-label">Hours</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="minutes">00</div>
+                                <div class="countdown-label">Minutes</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="seconds">00</div>
+                                <div class="countdown-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <div class="arrow"></div>
+            </div>
+        </section>
+        
+        <!-- About Preview Section -->
+        <section class="section about-preview">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content" data-aos="fade-right" data-aos-duration="800">
+                        <div class="section-header-left">
+                            <span class="section-tag">About the Conference</span>
+                            <h2>Where Ideas Meet Innovation</h2>
+                            <div class="divider-left"></div>
+                        </div>
+                        <p class="about-text">Join us for the premier interdisciplinary conference at Sanskaram University, bringing together researchers, academics, and industry professionals from diverse fields to address global challenges through collaborative innovation.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Attendees</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Presentations</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">Countries</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Universities</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn-link">Learn more about the conference <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <div class="about-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <div class="image-wrapper">
+                            <img src="images/SU 02.jpg" alt="Sanskaram University Campus">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Important Dates Section with Timeline -->
+        <section class="section important-dates">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Key Milestones</span>
+                    <h2>Important Dates</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Mark your calendar for these crucial deadlines</p>
+                </div>
+                <div class="timeline" id="timeline">
+                    <!-- Dates will be loaded from JSON with animation -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Speakers Section with Hover Effects -->
+        <section class="section speakers">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Meet the Experts</span>
+                    <h2>Featured Speakers</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">World-renowned researchers and thought leaders</p>
+                </div>
+                <div class="speakers-grid" id="speakersGrid">
+                    <!-- Speakers will be loaded from JSON -->
+                </div>
+                <div class="text-center" data-aos="fade-up">
+                    <a href="speakers.html" class="btn btn-outline">
+                        View All Speakers <i class="fas fa-users"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Schedule Preview -->
+        <section class="section schedule-preview">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Conference Program</span>
+                    <h2>Event Schedule</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="schedule-tabs" data-aos="fade-up">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-day="day1">Day 1 - April 15</button>
+                        <button class="tab-btn" data-day="day2">Day 2 - April 16</button>
+                        <button class="tab-btn" data-day="day3">Day 3 - April 17</button>
+                    </div>
+                    <div class="schedule-content" id="scheduleContent">
+                        <!-- Schedule content loaded dynamically -->
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-up">
+                    <a href="schedule.html" class="btn-link">View Full Schedule <i class="fas fa-calendar-alt"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Venue Highlight -->
+        <section class="section venue-highlight">
+            <div class="container">
+                <div class="venue-grid">
+                    <div class="venue-info" data-aos="fade-right">
+                        <span class="section-tag">Location</span>
+                        <h2>Conference Venue</h2>
+                        <div class="divider-left"></div>
+                        <p>Sanskaram University's state-of-the-art convention center provides the perfect setting for academic exchange and networking.</p>
+                        <ul class="venue-features">
+                            <li><i class="fas fa-check-circle"></i> 2000+ seating capacity</li>
+                            <li><i class="fas fa-check-circle"></i> Modern audiovisual facilities</li>
+                            <li><i class="fas fa-check-circle"></i> Exhibition halls</li>
+                            <li><i class="fas fa-check-circle"></i> Breakout rooms</li>
+                        </ul>
+                        <a href="venue-travel.html" class="btn btn-primary">View Venue Details</a>
+                    </div>
+                    <div class="venue-map" data-aos="fade-left">
+                        <div class="map-wrapper">
+                            <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps?q=Sanskaram+University&output=embed"
+                                width="100%"
+                                height="400"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sponsors Section with Marquee -->
+        <section class="section sponsors">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Partners</span>
+                    <h2>Our Sponsors</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="sponsors-slider" id="sponsorsSlider">
+                    <div class="sponsors-track" id="sponsorsTrack">
+                        <!-- Sponsors will be loaded from JSON -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="container">
+                <div class="newsletter-wrapper" data-aos="zoom-in">
+                    <div class="newsletter-content">
+                        <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to receive conference announcements and updates</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section" data-aos="fade-up">
+                    <h3>Sanskaram University</h3>
+                    <p>Inter-disciplinary Conference 2026</p>
+                    <p class="footer-tagline">Bridging Disciplines, Shaping Tomorrow</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="call-for-papers.html"><i class="fas fa-chevron-right"></i> Call for Papers</a></li>
+                        <li><a href="registration.html"><i class="fas fa-chevron-right"></i> Registration</a></li>
+                        <li><a href="schedule.html"><i class="fas fa-chevron-right"></i> Schedule</a></li>
+                        <li><a href="speakers.html"><i class="fas fa-chevron-right"></i> Speakers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Important Dates</h4>
+                    <ul class="dates-list" id="footerDates">
+                        <!-- Dates loaded dynamically -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Main Campus, Sanskaram University, India</li>
+                        <li><i class="fas fa-envelope"></i> conference2026@sanskaram.edu.in</li>
+                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sanskaram University. All rights reserved. | Designed for SUIC 2026</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>

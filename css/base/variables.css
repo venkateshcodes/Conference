@@ -1,0 +1,50 @@
+/* ========================================
+   CSS VARIABLES - Global Design Tokens
+   ======================================== */
+
+:root {
+    /* Colors */
+    --primary: #1A3B5D;
+    --primary-dark: #0F2A42;
+    --primary-light: #2C4C6E;
+    --secondary: #FACC15;
+    --secondary-dark: #EAB308;
+    --secondary-light: #FDE047;
+    --accent: #2C7A6E;
+    --text-dark: #1E2A3A;
+    --text-light: #5A6B7A;
+    --text-muted: #8B9AAB;
+    --bg-light: #F8F9FA;
+    --bg-white: #FFFFFF;
+    --bg-gray: #F3F4F6;
+    --border: #E5E7EB;
+    --success: #10B981;
+    --warning: #F59E0B;
+    --error: #EF4444;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+    --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    --spacing-2xl: 8rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}

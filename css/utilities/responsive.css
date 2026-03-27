@@ -1,0 +1,184 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+    :root {
+        --spacing-xl: 4rem;
+        --spacing-2xl: 6rem;
+    }
+    
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 70px);
+        margin-left: 70px !important;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-badge,
+    .timeline-item:nth-child(even) .timeline-badge {
+        left: 20px;
+        right: auto;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    /* Section Headers */
+    .section-header-left {
+        text-align: center;
+    }
+    
+    .divider-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Timeline */
+    .timeline-content {
+        padding: 1rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+    
+    /* Sponsors */
+    .sponsor-card {
+        width: 120px;
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 1rem;
+    }
+    
+    .countdown-item {
+        min-width: 60px;
+        padding: 0.75rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.25rem;
+    }
+}
+
+/* Landscape Mode */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .nav-menu {
+        overflow-y: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .back-to-top,
+    .newsletter,
+    .hero-buttons,
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    .hero {
+        background: white;
+        color: black;
+        padding: 1rem 0;
+    }
+    
+    .hero-overlay,
+    .hero-bg-parallax {
+        display: none;
+    }
+    
+    body {
+        color: black;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .section {
+        padding: 1rem 0;
+        page-break-inside: avoid;
+    }
+}
+
+@media (max-width:768px){
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.section{
+    padding:2.5rem 0;
+}
+
+.container{
+    padding:0 1rem;
+}
+
+}

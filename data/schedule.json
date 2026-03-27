@@ -1,0 +1,122 @@
+{
+    "day1": [
+        {
+            "time": "09:00 - 10:00",
+            "title": "Registration & Welcome Coffee",
+            "speaker": "",
+            "location": "Main Auditorium Lobby"
+        },
+        {
+            "time": "10:00 - 11:00",
+            "title": "Inaugural Ceremony",
+            "speaker": "Vice Chancellor, Sanskaram University",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "11:00 - 12:30",
+            "title": "Keynote Address: The Future of Interdisciplinary Research",
+            "speaker": "Dr. Sarah Chen, MIT",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "12:30 - 13:30",
+            "title": "Lunch Break",
+            "speaker": "",
+            "location": "Dining Hall"
+        },
+        {
+            "time": "13:30 - 15:30",
+            "title": "Parallel Sessions: Artificial Intelligence & Machine Learning",
+            "speaker": "Various Speakers",
+            "location": "Hall A"
+        },
+        {
+            "time": "15:30 - 16:00",
+            "title": "Tea Break",
+            "speaker": "",
+            "location": "Exhibition Area"
+        },
+        {
+            "time": "16:00 - 18:00",
+            "title": "Panel Discussion: Bridging Disciplines",
+            "speaker": "Industry Experts",
+            "location": "Main Auditorium"
+        }
+    ],
+    "day2": [
+        {
+            "time": "09:00 - 10:30",
+            "title": "Plenary Session: Sustainable Development Goals",
+            "speaker": "Prof. James Wilson, Oxford",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "10:30 - 12:30",
+            "title": "Parallel Sessions: Climate Change & Environmental Science",
+            "speaker": "Various Speakers",
+            "location": "Hall B"
+        },
+        {
+            "time": "12:30 - 13:30",
+            "title": "Lunch Break",
+            "speaker": "",
+            "location": "Dining Hall"
+        },
+        {
+            "time": "13:30 - 15:30",
+            "title": "Workshop: Research Methodology & Publishing",
+            "speaker": "Dr. Priya Sharma, IISc",
+            "location": "Workshop Room 1"
+        },
+        {
+            "time": "15:30 - 16:00",
+            "title": "Tea Break",
+            "speaker": "",
+            "location": "Exhibition Area"
+        },
+        {
+            "time": "16:00 - 18:00",
+            "title": "Poster Session & Networking",
+            "speaker": "Research Scholars",
+            "location": "Exhibition Hall"
+        }
+    ],
+    "day3": [
+        {
+            "time": "09:00 - 10:30",
+            "title": "Plenary Session: Economic Policy & Development",
+            "speaker": "Prof. Michael Brown, Stanford",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "10:30 - 12:30",
+            "title": "Parallel Sessions: Healthcare & Biotechnology",
+            "speaker": "Various Speakers",
+            "location": "Hall C"
+        },
+        {
+            "time": "12:30 - 13:30",
+            "title": "Lunch Break",
+            "speaker": "",
+            "location": "Dining Hall"
+        },
+        {
+            "time": "13:30 - 15:30",
+            "title": "Round Table: Future Collaborations",
+            "speaker": "All Speakers",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "15:30 - 16:30",
+            "title": "Closing Ceremony & Awards",
+            "speaker": "Conference Chair",
+            "location": "Main Auditorium"
+        },
+        {
+            "time": "16:30 - 18:00",
+            "title": "Farewell Reception",
+            "speaker": "",
+            "location": "Garden Area"
+        }
+    ]
+}

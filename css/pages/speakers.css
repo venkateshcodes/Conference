@@ -1,0 +1,633 @@
+/* ========================================
+   SPEAKERS PAGE STYLES
+   Sanskaram University Conference 2026
+   ======================================== */
+
+/* ========================================
+   KEYNOTE SPEAKERS SECTION
+   ======================================== */
+
+.keynote-speakers {
+    background: var(--bg-white);
+}
+
+.keynote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.keynote-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+    position: relative;
+}
+
+.keynote-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.keynote-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.keynote-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.keynote-card:hover .keynote-image img {
+    transform: scale(1.05);
+}
+
+.keynote-social {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    transition: var(--transition-base);
+}
+
+.keynote-card:hover .keynote-social {
+    bottom: 0;
+}
+
+.keynote-social a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.keynote-social a:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.keynote-info {
+    padding: 25px;
+}
+
+.keynote-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.keynote-title {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.keynote-affiliation {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.keynote-bio {
+    margin: 12px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+
+.keynote-talk {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.keynote-talk i {
+    color: var(--secondary);
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.keynote-talk span {
+    flex: 1;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* ========================================
+   INVITED SPEAKERS SECTION
+   ======================================== */
+
+.invited-speakers {
+    background: var(--bg-light);
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.speaker-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+    cursor: pointer;
+    position: relative;
+}
+
+.speaker-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.speaker-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.speaker-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.speaker-card:hover .speaker-image {
+    transform: scale(1.1);
+}
+
+.speaker-social-overlay {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    transition: var(--transition-base);
+}
+
+.speaker-card:hover .speaker-social-overlay {
+    bottom: 0;
+}
+
+.speaker-social-overlay a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.speaker-social-overlay a:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.speaker-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.speaker-name {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.speaker-title {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.speaker-affiliation {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* ========================================
+   SPEAKER HIGHLIGHTS SECTION
+   ======================================== */
+
+.speaker-highlights {
+    background: var(--bg-white);
+}
+
+.highlights-wrapper {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 70px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlights-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(250,204,21,0.12) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.highlights-wrapper i {
+    font-size: 50px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlights-wrapper h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.highlights-wrapper p {
+    color: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 0 auto 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlights-wrapper .btn-primary {
+    background: var(--secondary);
+    color: var(--primary-dark);
+    position: relative;
+    z-index: 1;
+}
+
+.highlights-wrapper .btn-primary:hover {
+    background: var(--secondary-light);
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   CALL FOR SPEAKERS SECTION
+   ======================================== */
+
+.call-for-speakers {
+    background: var(--bg-light);
+}
+
+.call-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.call-content {
+    padding-right: 20px;
+}
+
+.call-content .section-tag {
+    margin-bottom: 15px;
+}
+
+.call-content h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.call-content p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.call-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.call-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.call-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ========================================
+   SPEAKER MODAL (for detailed view)
+   ======================================== */
+
+.speaker-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.speaker-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition-base);
+    z-index: 1;
+}
+
+.modal-close:hover {
+    color: var(--secondary);
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+}
+
+.modal-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.modal-title {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.modal-affiliation {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-bio {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.modal-talk {
+    background: var(--bg-light);
+    padding: 15px;
+    border-radius: var(--radius-md);
+    margin-top: 20px;
+}
+
+.modal-talk h4 {
+    margin-bottom: 8px;
+    color: var(--secondary);
+}
+
+.modal-talk p {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .keynote-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .keynote-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .call-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .call-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .call-content .divider-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .highlights-wrapper {
+        padding: 40px 20px;
+    }
+    
+    .highlights-wrapper h3 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .modal-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .modal-info {
+        text-align: center;
+    }
+    
+    .modal-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-talk {
+        text-align: left;
+    }
+    
+    .keynote-image img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .speaker-name {
+        font-size: 1.1rem;
+    }
+    
+    .speaker-title,
+    .speaker-affiliation {
+        font-size: 0.8rem;
+    }
+    
+    .keynote-info h3 {
+        font-size: 1.25rem;
+    }
+    
+    .keynote-title {
+        font-size: 0.8rem;
+    }
+    
+    .keynote-bio {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES FOR SPEAKERS PAGE
+   ======================================== */
+
+.speaker-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background: var(--bg-light);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition-base);
+    color: var(--text-dark);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* Print Styles */
+@media print {
+    .speaker-modal,
+    .keynote-social,
+    .speaker-social-overlay,
+    .highlights-wrapper .btn-primary,
+    .call-for-speakers .btn {
+        display: none !important;
+    }
+    
+    .keynote-card,
+    .speaker-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .keynote-image img,
+    .speaker-image {
+        max-height: 200px;
+    }
+}

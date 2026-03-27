@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Tech Solutions Inc.",
+        "logo": "images/sponsors/sponsor-1.png",
+        "website": "https://techsolutions.com"
+    },
+    {
+        "name": "Research Foundation",
+        "logo": "images/sponsors/sponsor-2.png",
+        "website": "https://researchfoundation.org"
+    },
+    {
+        "name": "Global Education Trust",
+        "logo": "images/sponsors/sponsor-3.png",
+        "website": "https://globaleducation.org"
+    },
+    {
+        "name": "Innovation Labs",
+        "logo": "images/sponsors/sponsor-4.png",
+        "website": "https://innovationlabs.com"
+    },
+    {
+        "name": "Academic Press",
+        "logo": "images/sponsors/sponsor-5.png",
+        "website": "https://academicpress.com"
+    }
+]

@@ -1,0 +1,102 @@
+/* ========================================
+   CONTAINER & SECTION STYLES
+   ======================================== */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.section {
+    padding: var(--spacing-lg) 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-header-left {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    padding: 160px 0 100px;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(250,204,21,0.12) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.breadcrumbs {
+    margin-top: 12px;
+    font-size: 1.1rem;
+}
+
+.breadcrumbs a {
+    color: #E2E8F0;
+    text-decoration: none;
+}
+
+.breadcrumbs span {
+    color: var(--secondary);
+}
+
+.breadcrumbs a:hover {
+    color: var(--secondary);
+}
+
+.breadcrumbs i {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    margin: 0 8px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 120px 0 80px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header h1::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background: var(--secondary);
+        margin: 15px auto 0;
+    }
+}

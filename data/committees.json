@@ -1,0 +1,32 @@
+{
+    "organizing": [
+        {
+            "name": "Dr. Rajesh Kumar",
+            "role": "Conference Chair",
+            "affiliation": "Sanskaram University",
+            "email": "rajesh.kumar@sanskaram.edu.in",
+            "image": "images/committees/rajesh.jpg"
+        },
+        {
+            "name": "Dr. Anita Desai",
+            "role": "Co-Chair",
+            "affiliation": "Sanskaram University",
+            "email": "anita.desai@sanskaram.edu.in",
+            "image": "images/committees/anita.jpg"
+        }
+    ],
+    "program": [
+        {
+            "name": "Prof. David Chen",
+            "role": "Program Chair",
+            "affiliation": "National University of Singapore",
+            "email": "david.chen@nus.edu.sg"
+        },
+        {
+            "name": "Dr. Maria Garcia",
+            "role": "Track Chair - AI/ML",
+            "affiliation": "Technical University of Munich",
+            "email": "maria.garcia@tum.de"
+        }
+    ]
+}

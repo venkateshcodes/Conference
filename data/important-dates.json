@@ -1,0 +1,27 @@
+[
+    {
+        "event": "Abstract Submission Deadline",
+        "date": "December 15, 2025",
+        "description": "Submit your research abstract for review"
+    },
+    {
+        "event": "Notification of Acceptance",
+        "date": "January 30, 2026",
+        "description": "Authors will be notified about acceptance"
+    },
+    {
+        "event": "Early Bird Registration",
+        "date": "February 15, 2026",
+        "description": "Register at discounted rates"
+    },
+    {
+        "event": "Full Paper Submission",
+        "date": "March 10, 2026",
+        "description": "Submit full papers for proceedings"
+    },
+    {
+        "event": "Conference Dates",
+        "date": "April 15-17, 2026",
+        "description": "Join us for three days of knowledge sharing"
+    }
+]

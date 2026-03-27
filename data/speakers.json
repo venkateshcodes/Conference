@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Dr. Aadhya",
+        "title": "Keynote Speaker",
+        "affiliation": "Apex University",
+        "image": "images/speakers/PG 01.jpg",
+        "twitter": "https://twitter.com/sarahchen",
+        "linkedin": "https://linkedin.com/in/sarahchen",
+        "website": "https://Aadhya.mit.edu",
+        "bio": "Leading researcher in Artificial Intelligence and Machine Learning"
+    },
+    {
+        "name": "Prof. Ganesh Gupta",
+        "title": "Plenary Speaker",
+        "affiliation": "B.E.S.T University",
+        "image": "images/speakers/PB 01.jpg",
+        "twitter": "https://twitter.com/jameswilson",
+        "linkedin": "https://linkedin.com/in/jameswilson",
+        "website": "https://oxford.ac.uk/jameswilson",
+        "bio": "Expert in Sustainable Development and Climate Change"
+    },
+    {
+        "name": "Dr. Priya Sharma",
+        "title": "Distinguished Speaker",
+        "affiliation": "Indian Institute of Science",
+        "image": "images/speakers/PG 02.jpg",
+        "twitter": "https://twitter.com/priyasharma",
+        "linkedin": "https://linkedin.com/in/priyasharma",
+        "website": "https://iisc.ac.in/priyasharma",
+        "bio": "Pioneer in Biotechnology and Genetic Research"
+    },
+    {
+        "name": "Prof. Deepak Ram",
+        "title": "Invited Speaker",
+        "affiliation": "Vidya University",
+        "image": "images/speakers/PB 02.jpg",
+        "twitter": "https://twitter.com/michaelbrown",
+        "linkedin": "https://linkedin.com/in/michaelbrown",
+        "website": "https://stanford.edu/michaelbrown",
+        "bio": "Renowned Economist and Policy Advisor"
+    }
+]

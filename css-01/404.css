@@ -1,0 +1,579 @@
+/* ========================================
+   404 PAGE STYLES
+   Sanskaram University Conference 2026
+   ======================================== */
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   COLOR VARIABLES
+   ======================================== */
+:root {
+    --primary: #1A3B5D;
+    --primary-dark: #0F2A42;
+    --primary-light: #2C4C6E;
+    --secondary: #C6A43F;
+    --secondary-dark: #B2922A;
+    --secondary-light: #D4B65C;
+    --white: #FFFFFF;
+    --text-light: #5A6B7A;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================
+   404 PAGE MAIN SECTION
+   ======================================== */
+.error-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+/* Background Overlay */
+.error-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(198, 164, 63, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+    z-index: 1;
+}
+
+.error-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
+    z-index: 1;
+}
+
+/* ========================================
+   FLOATING SHAPES ANIMATION
+   ======================================== */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 20s infinite linear;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -100px;
+    animation-duration: 25s;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 100px;
+    left: -100px;
+    animation-duration: 20s;
+    animation-delay: -5s;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    bottom: 50%;
+    right: 10%;
+    animation-duration: 18s;
+    animation-delay: -10s;
+}
+
+.shape-4 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 15%;
+    animation-duration: 22s;
+    animation-delay: -3s;
+}
+
+/* ========================================
+   ERROR CONTAINER
+   ======================================== */
+.error-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: scaleIn 0.6s ease;
+}
+
+/* ========================================
+   404 ERROR CODE
+   ======================================== */
+.error-code {
+    font-size: 180px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+.error-title {
+    font-size: 36px;
+    color: var(--white);
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease 0.1s both;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.error-message {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease 0.2s both;
+    line-height: 1.6;
+}
+
+/* ========================================
+   SEARCH CONTAINER
+   ======================================== */
+.search-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 40px;
+    animation: fadeInUp 0.8s ease 0.3s both;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 15px 20px;
+    color: var(--white);
+    font-size: 16px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-container input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-container button {
+    background: var(--secondary);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.search-container button:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+}
+
+.search-container button:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.error-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.8s ease 0.4s both;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-dark);
+    border-color: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   HELPFUL LINKS
+   ======================================== */
+.helpful-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease 0.5s both;
+    margin-bottom: 40px;
+}
+
+.helpful-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.helpful-links a:hover {
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+/* ========================================
+   FUN FACT SECTION
+   ======================================== */
+.fun-fact {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 0.8s ease 0.6s both;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fun-fact p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fun-fact i {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 100px;
+    }
+    
+    .error-title {
+        font-size: 24px;
+    }
+    
+    .error-message {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .error-actions .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    .search-container input {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .search-container button {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 50px;
+    }
+    
+    .helpful-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .helpful-links a {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .fun-fact {
+        margin: 20px 20px 0;
+    }
+    
+    .fun-fact p {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .shape-1,
+    .shape-2,
+    .shape-3,
+    .shape-4 {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 70px;
+    }
+    
+    .error-title {
+        font-size: 20px;
+    }
+    
+    .error-message {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .search-container input {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .search-container button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .helpful-links a {
+        font-size: 12px;
+    }
+    
+    .fun-fact p {
+        font-size: 12px;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    .error-section {
+        background: white;
+        padding: 20px;
+    }
+    
+    .error-code {
+        color: black;
+        background: none;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+    }
+    
+    .error-title {
+        color: black;
+    }
+    
+    .error-message {
+        color: black;
+    }
+    
+    .error-actions .btn,
+    .search-container,
+    .floating-shapes,
+    .fun-fact,
+    .helpful-links {
+        display: none;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+:focus {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}

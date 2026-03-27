@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conference Schedule - Sanskaram University Interdisciplinary Conference 2026">
+    <title>Schedule | SUIC 2026 - Sanskaram University</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    
+    <!-- Layouts -->
+    <link rel="stylesheet" href="css/layouts/container.css">
+    <link rel="stylesheet" href="css/layouts/grid.css">
+    <link rel="stylesheet" href="css/layouts/header.css">
+    <link rel="stylesheet" href="css/layouts/footer.css">
+    
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/timeline.css">
+    
+    <!-- Page Specific -->
+    <link rel="stylesheet" href="css/pages/schedule.css">
+        
+    <!-- Utilities -->
+    <link rel="stylesheet" href="css/utilities/animations.css">
+    <link rel="stylesheet" href="css/utilities/responsive.css">
+    <link rel="stylesheet" href="css/utilities/helpers.css">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="preloader"><div class="loader"></div></div>
+    
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo3.png" alt="Sanskaram University" class="logo-img">
+                        <span class="logo-text">SUIC <span class="logo-year">2026</span></span>
+                    </a>
+                    <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="call-for-papers.html">Call for Papers</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="schedule.html" class="active">Schedule</a></li>
+                        <li><a href="committees.html">Committees</a></li>
+                        <li><a href="venue-travel.html">Venue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="registration.html" class="btn-register-nav">Register <i class="fas fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content" data-aos="fade-up">
+                    <h1>Conference Schedule</h1>
+                    <nav class="breadcrumbs">
+                        <a href="index.html">Home</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Schedule</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section schedule-full">
+            <div class="container">
+                <div class="schedule-info" data-aos="fade-up">
+                    <div class="schedule-dates">
+                        <div class="date-badge">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>April 15-17, 2026</span>
+                        </div>
+                        <div class="location-badge">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sanskaram University Main Campus</span>
+                        </div>
+                    </div>
+                    <div class="schedule-actions">
+                        <a href="documents/conference-program.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download Program (PDF)
+                        </a>
+                        <button class="btn btn-outline" onclick="window.print()">
+                            <i class="fas fa-print"></i> Print Schedule
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="schedule-tabs-full" data-aos="fade-up">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-day="day1">Day 1 - April 15</button>
+                        <button class="tab-btn" data-day="day2">Day 2 - April 16</button>
+                        <button class="tab-btn" data-day="day3">Day 3 - April 17</button>
+                    </div>
+                    <div class="schedule-content" id="scheduleFullContent">
+                        <!-- Schedule content loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section tracks-info bg-light">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Session Tracks</span>
+                    <h2>Parallel Sessions</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="tracks-grid">
+                    <div class="track-card" data-aos="fade-up">
+                        <div class="track-color" style="background: #1A3B5D;"></div>
+                        <h3>Track A: AI & Data Science</h3>
+                        <p>Location: Hall A, Main Building</p>
+                    </div>
+                    <div class="track-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="track-color" style="background: #2C7A6E;"></div>
+                        <h3>Track B: Sustainability</h3>
+                        <p>Location: Hall B, Main Building</p>
+                    </div>
+                    <div class="track-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="track-color" style="background: #C6A43F;"></div>
+                        <h3>Track C: Biotechnology</h3>
+                        <p>Location: Hall C, Science Block</p>
+                    </div>
+                    <div class="track-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="track-color" style="background: #5A6B7A;"></div>
+                        <h3>Track D: Economics & Policy</h3>
+                        <p>Location: Hall D, Business School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section special-events">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Special Events</span>
+                    <h2>Beyond Sessions</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card" data-aos="fade-up">
+                        <div class="event-icon"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="event-details">
+                            <h3>Welcome Reception</h3>
+                            <p class="event-time">April 15, 18:30 - 20:30</p>
+                            <p>Join us for an evening of networking and refreshments at the University Garden</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="event-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="event-details">
+                            <h3>Gala Dinner</h3>
+                            <p class="event-time">April 16, 19:00 - 22:00</p>
+                            <p>Celebrate with fellow attendees at the Grand Convention Hall</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-icon"><i class="fas fa-bus"></i></div>
+                        <div class="event-details">
+                            <h3>Campus Tour</h3>
+                            <p class="event-time">April 17, 15:00 - 17:00</p>
+                            <p>Guided tour of Sanskaram University campus and research facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section"><h3>Sanskaram University</h3><p>Interdisciplinary Conference 2026</p><div class="social-links"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="schedule.html">Schedule</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="registration.html">Register</a></li></ul></div>
+                <div class="footer-section"><h4>Contact</h4><ul class="contact-info"><li><i class="fas fa-envelope"></i> conference2026@sanskaram.edu.in</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Sanskaram University. All rights reserved.</p></div>
+        </div>
+    </footer>
+    
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        setTimeout(() => {
+            document.querySelector('.preloader')?.classList.add('fade-out');
+            setTimeout(() => document.querySelector('.preloader')?.remove(), 500);
+        }, 800);
+        
+        // Load schedule
+        fetch('data/schedule.json')
+            .then(res => res.json())
+            .then(schedule => {
+                const content = document.getElementById('scheduleFullContent');
+                const updateSchedule = (day) => {
+                    const daySchedule = schedule[day];
+                    content.innerHTML = `
+                        <div class="schedule-table">
+                            ${daySchedule.map(item => `
+                                <div class="schedule-item">
+                                    <div class="schedule-time">${item.time}</div>
+                                    <div class="schedule-details">
+                                        <div class="schedule-title">${item.title}</div>
+                                        ${item.speaker ? `<div class="schedule-speaker"><i class="fas fa-user"></i> ${item.speaker}</div>` : ''}
+                                        <div class="schedule-location"><i class="fas fa-map-marker-alt"></i> ${item.location}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                };
+                
+                updateSchedule('day1');
+                
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        updateSchedule(btn.dataset.day);
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
